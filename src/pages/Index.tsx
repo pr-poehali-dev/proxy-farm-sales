@@ -1,14 +1,25 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import HeroSection from '@/components/sections/HeroSection'
+import TestimonialsSection from '@/components/sections/TestimonialsSection'
+import HowItWorksSection from '@/components/sections/HowItWorksSection'
+import PartnershipStepsSection from '@/components/sections/PartnershipStepsSection'
+import ClientsSection from '@/components/sections/ClientsSection'
+import PricingSection from '@/components/sections/PricingSection'
+import BenefitsSection from '@/components/sections/BenefitsSection'
+import ContactSection from '@/components/sections/ContactSection'
 
 const Index = () => {
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-100">
-      <div className="text-center">
-        <h1 className="text-4xl font-bold mb-4 color-black text-black">Добро пожаловать!</h1>
-        <p className="text-xl text-gray-600">тут будет отображаться ваш проект</p>
-      </div>
+    <div className="min-h-screen bg-background">
+      <HeroSection />
+      <TestimonialsSection />
+      <HowItWorksSection />
+      <PartnershipStepsSection />
+      <ClientsSection />
+      <PricingSection />
+      <BenefitsSection />
+      <ContactSection />
     </div>
-  );
-};
+  )
+}
 
-export default Index;
+export default Index
